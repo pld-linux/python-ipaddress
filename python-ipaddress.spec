@@ -6,7 +6,7 @@
 Summary:	IPv4/IPv6 manipulation library
 Name:		python-%{module}
 Version:	1.0.6
-Release:	1
+Release:	2
 License:	PSF
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/i/ipaddress/%{module}-%{version}.tar.gz
