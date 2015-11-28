@@ -38,7 +38,7 @@ Dokumentacja API %{module}.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__python} setup.py build --build-base build-2 %{?with_tests:test}
+%py_build %{?with_tests:test}
 
 %if %{with doc}
 cd docs
@@ -49,11 +49,7 @@ rm -rf _build/html/_sources
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py \
-	build --build-base build-2 \
-	install --skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_postclean
 
