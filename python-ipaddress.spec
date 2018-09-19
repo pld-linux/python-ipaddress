@@ -9,7 +9,7 @@ Summary:	IPv4/IPv6 manipulation library
 Summary(pl.UTF-8):	Biblioteka do operacji na adresach IPv4/IPv6
 Name:		python-%{module}
 Version:	1.0.18
-Release:	1
+Release:	2
 License:	PSF
 Group:		Libraries/Python
 #Source0Download: https://pypi.python.org/simple/ipaddress/
