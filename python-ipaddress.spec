@@ -12,10 +12,10 @@ Version:	1.0.22
 Release:	1
 License:	PSF
 Group:		Libraries/Python
-#Source0Download: https://pypi.python.org/simple/ipaddress/
+#Source0Download: https://pypi.org/simple/ipaddress/
 Source0:	https://files.pythonhosted.org/packages/source/i/ipaddress/%{module}-%{version}.tar.gz
 # Source0-md5:	74c1ce3109f30eaa1ab3dd342e7b76d4
-URL:		https://pypi.python.org/pypi/ipaddress/
+URL:		https://pypi.org/project/ipaddress/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
@@ -81,7 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.md
 %{py_sitescriptdir}/ipaddress.py[co]
-%{py_sitescriptdir}/ipaddress-*.egg-info
+%{py_sitescriptdir}/ipaddress-%{version}-py*.egg-info
 %endif
 
 %if %{with python3}
@@ -90,5 +90,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.md
 %{py3_sitescriptdir}/ipaddress.py
 %{py3_sitescriptdir}/__pycache__/ipaddress.cpython-*.py[co]
-%{py3_sitescriptdir}/ipaddress-*.egg-info
+%{py3_sitescriptdir}/ipaddress-%{version}-py*.egg-info
 %endif
