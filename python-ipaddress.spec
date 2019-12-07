@@ -8,13 +8,13 @@
 Summary:	IPv4/IPv6 manipulation library
 Summary(pl.UTF-8):	Biblioteka do operacji na adresach IPv4/IPv6
 Name:		python-%{module}
-Version:	1.0.22
+Version:	1.0.23
 Release:	1
 License:	PSF
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/ipaddress/
 Source0:	https://files.pythonhosted.org/packages/source/i/ipaddress/%{module}-%{version}.tar.gz
-# Source0-md5:	74c1ce3109f30eaa1ab3dd342e7b76d4
+# Source0-md5:	aaee67a8026782af1831148beb0d9060
 URL:		https://pypi.org/project/ipaddress/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
